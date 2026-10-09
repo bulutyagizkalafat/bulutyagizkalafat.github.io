@@ -16,7 +16,7 @@ main{max-width:780px;margin:0 auto;padding:40px 16px 72px}h1{font-size:1.9rem;li
 </head>
 <body><main>
 <h1>Airport Boss Privacy Policy</h1>
-<p class="muted">Last updated: October 5, 2026 · App: Airport Boss (<code>com.northstar.havalimanimuduru</code>)</p>
+<p class="muted">Last updated: October 9, 2026 · App: Airport Boss (<code>com.northstar.havalimanimuduru</code>)</p>
 <nav><a href="tr.html" hreflang="tr">Türkçe</a></nav>
 <div class="card"><p>Airport Boss is a single-player mobile game published by AstorDEV ("we", "us"). This policy explains what information the app processes, why, and the choices you have. The game does not require an account, and the game itself never asks you to enter your name, email address or phone number, and never accesses your contacts, photos or precise location.</p></div>
 
@@ -26,10 +26,11 @@ main{max-width:780px;margin:0 auto;padding:40px 16px 72px}h1{font-size:1.9rem;li
 <h2>2. Advertising (Google AdMob)</h2>
 <p>The app uses the Google Mobile Ads SDK to show optional rewarded videos (only when you tap a reward button) and occasional interstitial ads at natural level ends. The SDK may automatically collect and share with Google your IP address (which can be used to estimate your approximate location), app interactions, diagnostic information and device identifiers such as the Android advertising ID and app set ID, for advertising, analytics and fraud prevention.</p>
 <p>Where required (for example in the EEA, the UK and Switzerland), Google's User Messaging Platform asks for your consent before ads are requested. When the option is available, you can reopen your privacy choices from the game's Settings.</p>
+<p>From version 1.0.1 onward, the game asks for a date of birth to decide whether to start game-controlled advertising. The date is used in memory for this choice and is not saved. The game starts AdMob and requests ads only for users aged 18 or over; packaged SDK components may still initialize automatically before this check.</p>
 
 <h2>3. Analytics and crash reports (Google Firebase)</h2>
-<p>To understand how the game is played and to fix crashes, the app uses Google Analytics for Firebase and Firebase Crashlytics. They may collect gameplay events (for example level started or completed, stars earned, rewarded video watched, daily reward claimed, language changed), an app-instance identifier, device and app information (device model, OS version, app version, language), approximate location derived from your IP address, and crash reports (stack trace, the device state at the time of the crash and a Crashlytics installation identifier).</p>
-<p>From the first launch, Analytics is configured with advertising storage, advertising user-data use and ad personalization denied, and Analytics collection of the Android advertising ID disabled. We record gameplay, rewarded-ad reward and interstitial-display events for usage analytics and troubleshooting. We do not link these events to your name, email address or a user account. AdMob processes advertising data separately as described above.</p>
+<p>Earlier versions (through 1.0.1, version code 11) include Google Analytics for Firebase and Firebase Crashlytics. Depending on the version and settings, these services may have processed automatic app events, gameplay events (such as level progress or ad rewards), device and app details (model, OS, app version and language), an app-instance identifier, approximate location inferred from an IP address, and crash reports (such as stack traces and device state). Existing data from an earlier version is not erased merely by updating the app.</p>
+<p>Version 1.0.2 (version code 12), when distributed, is configured to deactivate Firebase Analytics collection and disable automatic Crashlytics collection. The game does not start its Firebase gameplay-event logger in that version. Firebase SDK components remain packaged and may initialize when the app starts; these settings are not proof that no data can be processed. Google Mobile Ads processes advertising data separately as described above.</p>
 
 <h2>4. No in-app purchases</h2>
 <p>The game currently offers no in-app purchases and does not connect to Google Play Billing. Everything in the game is earned through play.</p>
@@ -37,10 +38,10 @@ main{max-width:780px;margin:0 auto;padding:40px 16px 72px}h1{font-size:1.9rem;li
 <h2>5. Summary</h2>
 <div class="tbl"><table>
 <tr><th>Data</th><th>Collected by</th><th>Purpose</th><th>Shared</th></tr>
-<tr><td>Approximate location (from IP address)</td><td>AdMob, Firebase</td><td>Ads, analytics, fraud prevention</td><td>With Google for ads</td></tr>
-<tr><td>App interactions</td><td>AdMob, Firebase Analytics</td><td>Ads, analytics</td><td>With Google for ads</td></tr>
-<tr><td>Crash logs and diagnostics</td><td>Firebase Crashlytics, AdMob</td><td>Stability, analytics</td><td>With Google for ads (AdMob diagnostics)</td></tr>
-<tr><td>Device or other identifiers</td><td>AdMob, Firebase</td><td>Ads, analytics, fraud prevention</td><td>With Google for ads</td></tr>
+<tr><td>Approximate location (from IP address)</td><td>AdMob; Firebase in earlier versions</td><td>Ads, analytics, fraud prevention</td><td>With Google when processed by its SDKs</td></tr>
+<tr><td>App interactions and other in-app activity</td><td>AdMob; Firebase Analytics in earlier versions</td><td>Ads, analytics</td><td>With Google when processed by its SDKs</td></tr>
+<tr><td>Crash logs and diagnostics</td><td>AdMob diagnostics; Firebase Crashlytics in earlier versions</td><td>Performance and crash troubleshooting, analytics</td><td>With Google when processed by its SDKs</td></tr>
+<tr><td>Device or other identifiers</td><td>AdMob; Firebase in earlier versions</td><td>Ads, analytics, fraud prevention</td><td>With Google when processed by its SDKs</td></tr>
 </table></div>
 
 <h2>6. Your choices</h2>
@@ -49,14 +50,14 @@ main{max-width:780px;margin:0 auto;padding:40px 16px 72px}h1{font-size:1.9rem;li
 <li>You can reset or delete your advertising ID in your device's Android settings (Privacy &gt; Ads; wording varies by device).</li>
 <li>You can reopen ad consent choices from the game's Settings where available.</li>
 <li>You can delete local game data by clearing the app's storage or uninstalling the game.</li>
-<li>To request deletion of analytics or crash data related to your device, email us (see Contact) and name the game; we will handle the request with the tools Google provides.</li>
+<li>For questions or requests to delete data associated with the app, email us with the game name (see Contact). We will review and respond using controls available to us and Google where applicable. Because the game has no account, we may not be able to identify or delete a particular record held by a provider.</li>
 </ul>
 
 <h2>7. Retention and security</h2>
-<p>Data sent to Google is encrypted in transit (TLS). Analytics data is kept for the retention period configured in our Google Analytics settings; Crashlytics keeps crash reports for 90 days. Advertising data held by Google follows Google's own retention policies.</p>
+<p>Google Mobile Ads states that the data it collects is encrypted in transit (TLS). Data held by Google follows the provider’s applicable retention policies and settings, which can vary by service and by when the data was collected; we do not promise one fixed retention period for all provider records. Updating to version 1.0.2 does not delete data previously held by Google. Local game progress remains until you clear app storage or uninstall.</p>
 
 <h2>8. Children</h2>
-<p>The game is not directed at children under 13 and we do not knowingly collect personal information from children. If you believe a child has provided personal information, contact us and we will delete it.</p>
+<p>The game is not directed at children under 13, and we do not knowingly seek their personal information. If you believe a child has provided information through the app, contact us; we will review the report and take appropriate action using controls available to us.</p>
 
 <h2>9. International transfers</h2>
 <p>Google may process data in the United States and in other countries where it or its service providers operate, under its own safeguards.</p>
